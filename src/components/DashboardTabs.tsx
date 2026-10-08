@@ -41,7 +41,6 @@ export function DashboardTabs() {
 
   return (
     <div className="w-full max-w-4xl mx-auto p-4">
-      {/* ส่วนควบคุม Tabs */}
       <Tabs defaultValue="overview" className="w-full">
         <TabsList className="grid w-fit grid-cols-2 mb-4 bg-muted p-1 rounded-lg">
           <TabsTrigger
@@ -60,10 +59,8 @@ export function DashboardTabs() {
           </TabsTrigger>
         </TabsList>
 
-        {/* ---------------- แท็บที่ 1: Overview ---------------- */}
         <TabsContent value="overview">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {/* Total Spent */}
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -81,7 +78,6 @@ export function DashboardTabs() {
               </CardContent>
             </Card>
 
-            {/* Total Transactions */}
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -95,7 +91,6 @@ export function DashboardTabs() {
               </CardContent>
             </Card>
 
-            {/* Average Expense */}
             <Card>
               <CardHeader className="pb-2">
                 <CardTitle className="text-sm font-medium text-muted-foreground">
@@ -115,7 +110,6 @@ export function DashboardTabs() {
           </div>
         </TabsContent>
 
-        {/* ---------------- แท็บที่ 2: By Category ---------------- */}
         <TabsContent value="category">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
             {categoryData.map((cat) => {

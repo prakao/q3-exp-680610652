@@ -41,7 +41,7 @@ export function StudentInfo({ isOpen, onClose }: StudentDrawerProps) {
               <span className="bg-black text-white px-2 py-0.5 rounded text-xs">
                 Hobbies
               </span>{" "}
-              เล่นเกม,กินข้าว
+              เล่นเกม,ดูหนัง,ฟังเพลง
             </div>
             <div className="flex gap-2">
               <span className="bg-black text-white px-2 py-0.5 rounded text-xs">
